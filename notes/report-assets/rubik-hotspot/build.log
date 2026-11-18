@@ -1,0 +1,9 @@
+make: `build/rubik/O2/impl.o' is up to date.
+make: `build/rubik/impl_asm.o' is up to date.
+make: `build/common/start.o' is up to date.
+make: `build/common/perf.o' is up to date.
+make: `build/common/rt.o' is up to date.
+make: `build/common/print.o' is up to date.
+make: `build/common/utest.o' is up to date.
+make: `build/common/trt.o' is up to date.
+make: `build/common/tutest.o' is up to date.

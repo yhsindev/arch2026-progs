@@ -1,0 +1,28 @@
+GitHub CI verification — November 9, 2026
+
+Repository: yhsindev/arch2026-progs
+Commit: ef7eaee1684875372bbbde966716e17c59eca99c
+Run: 42459082381, attempt 2
+URL: https://github.com/yhsindev/arch2026-progs/actions/runs/42459082381/attempts/2
+Grade job: https://github.com/yhsindev/arch2026-progs/actions/runs/42459082381/job/129143574387
+
+Jobs: grade PASS; lint PASS; chain PASS; ci PASS.
+The reference job is instructor-only and was skipped as expected.
+
+Grade output (2026-11-09T11:52:57Z):
+toolchain   PASS  5.0/5
+emulator    PASS 10.0/10
+rubik       PASS 15.0/15
+bf16        PASS 15.0/15
+gcd         PASS 15.0/15
+fixed       PASS 15.0/15
+disassembly PASS  5.0/5
+cycles      PASS 10.0/10
+footprint   PASS  5.0/5
+hygiene     PASS  5.0/5
+TOTAL 100.0/100
+
+The downloaded cycles artifact has 72 CSV measurement rows and 20 footprint
+rows. Parsed rows exactly match the November 8 local CSVs in this folder.
+The independent full distance-eleven sweep remains a local extra test; this
+summary does not claim that it was part of the official GitHub workflow.

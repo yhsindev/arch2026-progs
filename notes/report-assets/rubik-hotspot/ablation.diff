@@ -1,0 +1,41 @@
+--- submitted/rubik.S
++++ experiment/no_inline_probe.S
+@@ -344,34 +344,10 @@
+     bltu    a2, t0, .Lrubik_search_fail
+     li      t0, 5
+     bltu    t0, a2, .Lrubik_search_prefix
+-    # Most terminal probes miss. Test inline before allocating the suffix
+-    # frame; successful probes alone enter reconstruction.
+-    slli    t0, a0, 10
+-    or      t0, t0, a1
+-    srli    t1, t0, 7
+-    xor     t1, t1, t0
+-    srli    t2, t0, 13
+-    xor     t1, t1, t2
+-    slli    t1, t1, 18
+-    srli    t1, t1, 18
+-    slli    t1, t1, 2
+-    add     t1, s4, t1
+-    li      t5, 65536
+-    add     t5, t5, s4
+-    li      t4, -1
+-.Lrubik_search_probe:
+-    lw      t3, 0(t1)
+-    beq     t3, t4, .Lrubik_search_fail
+-    srli    t2, t3, 7
+-    beq     t2, t0, .Lrubik_search_found
+-    addi    t1, t1, 4
+-    bne     t1, t5, .Lrubik_search_probe
+-    mv      t1, s4
+-    j       .Lrubik_search_probe
+-.Lrubik_search_found:
+-    mv      a3, a2
+-    mv      a2, a4
+-    j       .Lrubik_finish
++    # Ablation: enter finish without an inline precheck.
++    mv a3, a2
++    mv a2, a4
++    j .Lrubik_finish
+ .Lrubik_search_fail:
+     li      a0, -1
+     ret

@@ -1,0 +1,15 @@
+{
+  "sqrt_positive_normals": {
+    "inputs": 32512,
+    "relative_error_max": 0.0038835098164954423,
+    "input_hex": "0x0081",
+    "result_hex": "0x2000"
+  },
+  "mul_unit_binade_mantissas": {
+    "pairs": 16384,
+    "relative_error_max": 0.007691841802434741,
+    "a_hex": "0x3F9E",
+    "b_hex": "0x3FD1",
+    "result_hex": "0x4000"
+  }
+}

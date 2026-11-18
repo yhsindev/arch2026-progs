@@ -1,0 +1,121 @@
+17:29:18 [33mWARN [0m [90msrc/io.c:365:[0m Guest addresses will not wrap at 4 GiB in native code
+rt_mulsi3_small ... ok
+rt_mulsi3_edges ... ok
+rt_mulsi3_random ... ok
+rt_memcpy_memset ... ok
+rt_memmove ... ok
+rt_memcmp_strlen ... ok
+rt_printf_integers ... ok
+rt_printf_other ... ok
+rt_printf_truncation ... ok
+rt_startup ... ok
+rt_counters ... ok
+utest_boolean ... ok
+utest_equality ... ok
+utest_almost_equal ... ok
+utest_pointers_memory ... ok
+utest_setup ... ok
+utest_teardown ... ok
+rubik_c_depth0 ... ok
+rubik_asm_depth0 ... ok
+rubik_c_depth1 ... ok
+rubik_asm_depth1 ... ok
+rubik_c_depth2 ... ok
+rubik_asm_depth2 ... ok
+rubik_c_depth3 ... ok
+rubik_asm_depth3 ... ok
+rubik_c_depth4 ... ok
+rubik_asm_depth4 ... ok
+rubik_c_depth5 ... ok
+rubik_asm_depth5 ... ok
+rubik_c_depth6 ... ok
+rubik_asm_depth6 ... ok
+rubik_c_depth7 ... ok
+rubik_asm_depth7 ... ok
+rubik_c_depth8 ... ok
+rubik_asm_depth8 ... ok
+rubik_c_depth9 ... ok
+rubik_asm_depth9 ... ok
+rubik_c_depth10 ... ok
+rubik_asm_depth10 ... ok
+rubik_c_depth11 ... ok
+rubik_asm_depth11 ... ok
+rubik_c_solved ... ok
+rubik_asm_solved ... ok
+rubik_c_single_moves ... ok
+rubik_asm_single_moves ... ok
+rubik_c_chain ... ok
+rubik_asm_chain ... ok
+rubik_c_invalid ... ok
+rubik_asm_invalid ... ok
+rubik_c_small_buffer ... ok
+rubik_asm_small_buffer ... ok
+rubik_asm_matches_c ... ok
+Summary: 52 passed, 0 failed.
+@@bench prog=rubik fn=solve impl=final opt=O2 n=6 cycles=159343 instret=159342 overhead=44 overhead_instret=43 checksum=29
+@@hotspot variant=final dataset=bench6 index=0 state=12345671111111 distance=0 instructions=639
+@@hotspot variant=final dataset=bench6 index=1 state=46253172123131 distance=2 instructions=817
+@@hotspot variant=final dataset=bench6 index=2 state=43562713121333 distance=4 instructions=1025
+@@hotspot variant=final dataset=bench6 index=3 state=72465131321333 distance=6 instructions=1669
+@@hotspot variant=final dataset=bench6 index=4 state=62345713133111 distance=8 instructions=12327
+@@hotspot variant=final dataset=bench6 index=5 state=24513763133333 distance=9 instructions=142817
+@@hotspot variant=final dataset=official59 index=0 state=12345671111111 distance=0 instructions=639
+@@hotspot variant=final dataset=official59 index=1 state=16543271111111 distance=1 instructions=740
+@@hotspot variant=final dataset=official59 index=2 state=54321671111111 distance=1 instructions=720
+@@hotspot variant=final dataset=official59 index=3 state=12367451111111 distance=1 instructions=729
+@@hotspot variant=final dataset=official59 index=4 state=13642571111111 distance=1 instructions=743
+@@hotspot variant=final dataset=official59 index=5 state=46253172123131 distance=2 instructions=817
+@@hotspot variant=final dataset=official59 index=6 state=47321563211123 distance=2 instructions=830
+@@hotspot variant=final dataset=official59 index=7 state=41623572313211 distance=2 instructions=826
+@@hotspot variant=final dataset=official59 index=8 state=26413572123131 distance=2 instructions=838
+@@hotspot variant=final dataset=official59 index=9 state=71254363311113 distance=3 instructions=933
+@@hotspot variant=final dataset=official59 index=10 state=64352713313222 distance=3 instructions=952
+@@hotspot variant=final dataset=official59 index=11 state=61345722311132 distance=3 instructions=946
+@@hotspot variant=final dataset=official59 index=12 state=71624351111111 distance=3 instructions=951
+@@hotspot variant=final dataset=official59 index=13 state=43562713121333 distance=4 instructions=1025
+@@hotspot variant=final dataset=official59 index=14 state=26417531112323 distance=4 instructions=1043
+@@hotspot variant=final dataset=official59 index=15 state=12457361123132 distance=4 instructions=1007
+@@hotspot variant=final dataset=official59 index=16 state=56174323131212 distance=4 instructions=992
+@@hotspot variant=final dataset=official59 index=17 state=15627343312112 distance=4 instructions=1013
+@@hotspot variant=final dataset=official59 index=18 state=23175642121223 distance=5 instructions=1092
+@@hotspot variant=final dataset=official59 index=19 state=42573162222323 distance=5 instructions=1108
+@@hotspot variant=final dataset=official59 index=20 state=21456733312322 distance=5 instructions=1126
+@@hotspot variant=final dataset=official59 index=21 state=61742352123311 distance=5 instructions=1102
+@@hotspot variant=final dataset=official59 index=22 state=12734651232113 distance=5 instructions=1169
+@@hotspot variant=final dataset=official59 index=23 state=72465131321333 distance=6 instructions=1669
+@@hotspot variant=final dataset=official59 index=24 state=53712462123122 distance=6 instructions=2730
+@@hotspot variant=final dataset=official59 index=25 state=72341652221213 distance=6 instructions=2020
+@@hotspot variant=final dataset=official59 index=26 state=37162453131233 distance=6 instructions=2276
+@@hotspot variant=final dataset=official59 index=27 state=27415631133212 distance=6 instructions=1636
+@@hotspot variant=final dataset=official59 index=28 state=42167532131213 distance=7 instructions=6144
+@@hotspot variant=final dataset=official59 index=29 state=31256471122232 distance=7 instructions=3476
+@@hotspot variant=final dataset=official59 index=30 state=36542172213122 distance=7 instructions=2642
+@@hotspot variant=final dataset=official59 index=31 state=37164252211121 distance=7 instructions=6036
+@@hotspot variant=final dataset=official59 index=32 state=73641523323122 distance=7 instructions=3894
+@@hotspot variant=final dataset=official59 index=33 state=62345713133111 distance=8 instructions=12327
+@@hotspot variant=final dataset=official59 index=34 state=24316572122213 distance=8 instructions=15638
+@@hotspot variant=final dataset=official59 index=35 state=25713642221111 distance=8 instructions=7897
+@@hotspot variant=final dataset=official59 index=36 state=42153672212231 distance=8 instructions=15551
+@@hotspot variant=final dataset=official59 index=37 state=72543161323331 distance=8 instructions=23584
+@@hotspot variant=final dataset=official59 index=38 state=52764132112322 distance=8 instructions=31353
+@@hotspot variant=final dataset=official59 index=39 state=24513763133333 distance=9 instructions=142817
+@@hotspot variant=final dataset=official59 index=40 state=43752611332133 distance=9 instructions=48057
+@@hotspot variant=final dataset=official59 index=41 state=57462311312222 distance=9 instructions=202825
+@@hotspot variant=final dataset=official59 index=42 state=15476322323123 distance=9 instructions=120149
+@@hotspot variant=final dataset=official59 index=43 state=64537213233122 distance=9 instructions=93565
+@@hotspot variant=final dataset=official59 index=44 state=35742163122131 distance=9 instructions=103030
+@@hotspot variant=final dataset=official59 index=45 state=25416373331111 distance=10 instructions=423699
+@@hotspot variant=final dataset=official59 index=46 state=21456373113332 distance=10 instructions=594772
+@@hotspot variant=final dataset=official59 index=47 state=74265313212311 distance=10 instructions=275077
+@@hotspot variant=final dataset=official59 index=48 state=73142652313232 distance=10 instructions=685880
+@@hotspot variant=final dataset=official59 index=49 state=43571262122312 distance=10 instructions=296072
+@@hotspot variant=final dataset=official59 index=50 state=43216752221321 distance=10 instructions=257410
+@@hotspot variant=final dataset=official59 index=51 state=21345671111111 distance=11 instructions=329247
+@@hotspot variant=final dataset=official59 index=52 state=56723411121113 distance=11 instructions=80924
+@@hotspot variant=final dataset=official59 index=53 state=23156471222132 distance=11 instructions=173452
+@@hotspot variant=final dataset=official59 index=54 state=76543212222221 distance=11 instructions=157131
+@@hotspot variant=final dataset=official59 index=55 state=74132562122111 distance=11 instructions=93457
+@@hotspot variant=final dataset=official59 index=56 state=37614522323312 distance=11 instructions=122888
+@@hotspot variant=final dataset=official59 index=57 state=12637451332112 distance=11 instructions=22741
+@@hotspot variant=final dataset=official59 index=58 state=47135622132332 distance=11 instructions=96178
+@@hotspot variant=final dataset=directed index=0 state=54721631111111 distance=11 instructions=3201223

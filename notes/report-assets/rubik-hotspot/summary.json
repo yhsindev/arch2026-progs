@@ -1,0 +1,114 @@
+{
+  "bench": {
+    "final": {
+      "calls": 6,
+      "mean": 26549.833333333332,
+      "checksum": 29
+    },
+    "no_inline_probe": {
+      "calls": 6,
+      "mean": 29138.333333333332,
+      "checksum": 29
+    }
+  },
+  "object_sizes": {
+    "final": {
+      ".text": 1572,
+      ".data": 0,
+      ".bss": 0,
+      ".rodata": 116496
+    },
+    "no_inline_probe": {
+      ".text": 1488,
+      ".data": 0,
+      ".bss": 0,
+      ".rodata": 116496
+    },
+    "profile": {
+      ".text": 2152,
+      ".data": 0,
+      ".bss": 52,
+      ".rodata": 116496
+    }
+  },
+  "datasets": {
+    "bench6": {
+      "calls": 6,
+      "baseline_total": 174825,
+      "final_total": 159294,
+      "reduction_percent": 8.883740883740888,
+      "baseline_mean": 29137.5,
+      "final_mean": 26549.0,
+      "events": {
+        "search_entries": 1939,
+        "prefix_nodes": 323,
+        "terminal_attempts": 1043,
+        "terminal_probes": 9530,
+        "terminal_hits": 3,
+        "terminal_misses": 1040,
+        "terminal_wraps": 0,
+        "pdb_prunes": 573,
+        "finish_entries": 9,
+        "lookup_entries": 30,
+        "lookup_probes": 66,
+        "transition_steps": 1931,
+        "bound_iterations": 8
+      },
+      "terminal_miss_percent": 99.712368168744,
+      "derived_probe_instructions": 66573,
+      "derived_probe_share_percent": 41.79253455874044
+    },
+    "official59": {
+      "calls": 59,
+      "baseline_total": 4964670,
+      "final_total": 4479585,
+      "reduction_percent": 9.770740049187554,
+      "baseline_mean": 84146.94915254238,
+      "final_mean": 75925.16949152542,
+      "events": {
+        "search_entries": 55077,
+        "prefix_nodes": 9196,
+        "terminal_attempts": 32441,
+        "terminal_probes": 275004,
+        "terminal_hits": 36,
+        "terminal_misses": 32405,
+        "terminal_wraps": 0,
+        "pdb_prunes": 13440,
+        "finish_entries": 95,
+        "lookup_entries": 344,
+        "lookup_probes": 931,
+        "transition_steps": 54982,
+        "bound_iterations": 95
+      },
+      "terminal_miss_percent": 99.88902931475602,
+      "derived_probe_instructions": 1942065,
+      "derived_probe_share_percent": 43.35368120037905
+    },
+    "directed": {
+      "calls": 1,
+      "baseline_total": 3558581,
+      "final_total": 3201223,
+      "reduction_percent": 10.042148822803243,
+      "baseline_mean": 3558581.0,
+      "final_mean": 3201223.0,
+      "events": {
+        "search_entries": 40373,
+        "prefix_nodes": 6731,
+        "terminal_attempts": 23826,
+        "terminal_probes": 196645,
+        "terminal_hits": 1,
+        "terminal_misses": 23825,
+        "terminal_wraps": 0,
+        "pdb_prunes": 9816,
+        "finish_entries": 2,
+        "lookup_entries": 7,
+        "lookup_probes": 12,
+        "transition_steps": 40372,
+        "bound_iterations": 1
+      },
+      "terminal_miss_percent": 99.99580290439016,
+      "derived_probe_instructions": 1394306,
+      "derived_probe_share_percent": 43.555416164384674
+    }
+  }
+}
